@@ -1,6 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Dht from '../components/NavigationBar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/globle.css';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,16 +36,12 @@ import Card from "../components/Card.astro";
 				</linearGradient>
 			</defs>
 		</svg>
-		<a href="/">Home</a>
-		<a href="/">About</a>
-		<a href="/">Blog</a>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<h2>P211012604 <span class="text-gradient">卓玛草</span></h2>
+		<Dht />
+		<h1>欢迎来到 <span class="text-gradient">astro</span></h1>
+		<h2>P211012604<span class="text-gradient">卓玛草</span></h2>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br
-			/>
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-			above.
+			To get started, open the directory <code>src/pages</code> in your project.<br />
+			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -66,6 +65,9 @@ import Card from "../components/Card.astro";
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+		<footer>
+			<Footer />
+		</footer>
 	</main>
 </Layout>
 
@@ -75,9 +77,9 @@ import Card from "../components/Card.astro";
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: white;
+		color: rgb(11, 1, 1);
 		font-size: 20px;
-		line-height: 1.6;
+		line-height: 6;
 	}
 	.astro-a {
 		position: absolute;
@@ -95,7 +97,7 @@ import Card from "../components/Card.astro";
 		text-align: center;
 		margin-bottom: 1em;
 	}
-	h2 {
+	h2{
 		text-align: center;
 	}
 	.text-gradient {
@@ -108,10 +110,7 @@ import Card from "../components/Card.astro";
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
 		padding: 1.5rem;
 		border-radius: 8px;
 	}

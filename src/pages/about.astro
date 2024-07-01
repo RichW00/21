@@ -1,6 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Dht from '../components/NavigationBar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/globle.css';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,44 +36,17 @@ import Card from "../components/Card.astro";
 				</linearGradient>
 			</defs>
 		</svg>
-        <a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
-       
-		<h1>关于我</h1>
-		<h2>在这个页面，将展示有关我的内容。</h2>
-        <ul>
-            <li><a href="./md/1"></a></li>
-        </ul>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br
-			/>
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-			above.
+		<Dht />
+		<h1>“我”</span></h1>
+        <h2>我的日常</h2>
+        <p>在这个页面，我将展示有关我的一些信息。
 		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+
+		<p>
+            还有我的一些日常
+        </p>
 	</main>
+	<Footer />
 </Layout>
 
 <style>
@@ -99,8 +75,13 @@ import Card from "../components/Card.astro";
 		text-align: center;
 		margin-bottom: 1em;
 	}
-	h2 {
+	h2{
 		text-align: center;
+	}
+	p {
+		/* font-size:16px;*/
+		text-indent: 2em;
+		color: rgb(245, 248, 250);
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -112,10 +93,7 @@ import Card from "../components/Card.astro";
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
