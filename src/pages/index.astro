@@ -42,9 +42,7 @@ import '../styles/globle.css';
 		<img src="https://img0.baidu.com/it/u=917575173,2169929449&fm=253&fmt=auto&app=138&f=JPEG?w=450&h=278" alt="丁香医生">
 		<p class="instructions">
 			与一群有知识、有温度的医生，一起分享健康知识 </p>
-	
-
-				<p><strong>为了共同呵护您的健康</strong></p>
+	           <p><strong>为了共同呵护您的健康</strong></p>
 				<code>可以联系我们:0941627888</code> </p>
 
 		<ul role="list" class="link-card-grid">
@@ -107,10 +105,15 @@ import '../styles/globle.css';
 	h2{
 		text-align: center;
 	}
-	img{
-  width: 400px; 
-  height: 300px; 
-position: center;
+		.parent {
+  position: relative;
+  height: 200px; 
+}
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 使用CSS3的transform属性进行居中 */
 }
 	.text-gradient {
 		background-image: var(--accent-gradient);
