@@ -1,0 +1,40 @@
+---
+const{imgsrc,poetrycard,poetrycardtitle,figure,time} = Astro.props
+---
+<meta charset="UTF-8">
+
+<div>
+    <img src={Astro.props.imgsrc}
+    alt="Poetrycard"  
+    />
+
+    <h2>{poetrycardtitle}</h2>
+    <p>
+        <span class="figure">{figure}</span>
+    </p>
+    <p class="pubTime">{time}</p>
+</div>
+
+<style>
+    div {
+        border: 1px rgb(40, 41, 43) solid;
+        width: 250px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0.5em;
+    }
+    img {
+        width: 240px;
+    }
+    h2 {
+        font-size: 18px;
+        font-family: "方正瘦金书简体";
+    }
+    .figure {
+        font-size: 14px; /* 假设的样式，根据需要调整 */
+    }
+    .pubTime {
+        font-size: 12px;
+        color: rgb(97, 92, 86);
+    }
+</style>

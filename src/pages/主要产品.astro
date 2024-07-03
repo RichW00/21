@@ -5,8 +5,8 @@ import Dht from '../components/NavigationBar.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/globle.css';
 ---
-<Layout title="丁香医生">
-	
+
+<Layout title="Welcome to Astro.">
 	<main>
 		<svg
 			class="astro-a"
@@ -37,49 +37,19 @@ import '../styles/globle.css';
 			</defs>
 		</svg>
 		<Dht />
-		<h1><span class="text-gradient">丁香医生</span></h1>
-		<h2>welcome to <span class="text-gradient"> Dingxiang Doctor</span></h2>
-	
-		<p class="instructions">
-			与一群有知识、有温度的医生，一起分享健康知识 </p>
-			<p>
-				
-			<img src="https://img0.baidu.com/it/u=917575173,2169929449&fm=253&fmt=auto&app=138&f=JPEG?w=450&h=278" alt="丁香医生">
-			
-				
+		<h1>拥有不同种类的产品</h1>
+        <h2>丁香医生新媒体</h2>
+        <p>丁香医生(新媒体)诞生于 2014 年，创立之初意在解决医患信息不对等的问题，为中国民众提供可靠的、值得信赖的医学科普知识信源。拥有丁香医生、丁香生活研究所、偶尔治愈等子品牌</p>
 
-				<p><strong>为了共同呵护您的健康</strong></p>
-				<code>可以联系我们:0941627888</code> </p>
-
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="健康生活"
-				body="我们旨在陪伴你和家人，一起发现健康生活。"
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="健康知识"
-				body="我们将为顾客提供保持健康、保持活力的知识。"
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="健康问诊"
-				body="我们有专业靠谱的医生客服，解决顾客遇到的健康问题。"
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="健康商店"
-				body=" 拥有品质优良、性价比高、营养健康的药物。❤️"
-			/>
-		</ul>
-		<footer>
-			<Footer />
-		</footer>
-		<h1><span class="text-gradient">大众健康</span>
-		</h1>
-
+          <p>丁香医生拥有一支由医生、药师、营养师等专业人士组成的团队，发布大量健康科普文章，涵盖疾病预防、健康生活方式、医学知识等多个方面，帮助用户掌握更多健康知识。
+		<h2>丁香妈妈</h2>
+        <p>丁香妈妈始于新媒体， 2015年2月上线之初以专业母婴科普切入，开启为学习型妈妈服务。
+            2017年9月，基于对母婴人群在知识领域需求的深刻洞察，丁香妈妈尝试开发在线课程产品形态，着力从碎片化向体系化转变。
+            2018年9月，丁香妈妈App正式上线。 2020年1月， [7]作为系统性解决方案的首次尝试，由3万名妈妈用户参与内测的拳头产品之一「丁香妈妈大学」正式发布，助力新手妈妈孕育1000天的各种问题</p>
+<h2>丁香家</h2>
+<p>丁香家健康商店的所有产品均需经过买手及研究院选品、买手找样、样品科学性循证调查、用户及专家试用等十余个专业审核流程方能上线，以确保为用户提供切实有效的产品解决方案。</p>
 	</main>
+	<Footer />
 </Layout>
 
 <style>
@@ -88,9 +58,9 @@ import '../styles/globle.css';
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: rgb(63, 51, 51);
+		color: rgb(7, 6, 6);
 		font-size: 20px;
-		line-height: 6;
+		line-height: 1.6;
 	}
 	.astro-a {
 		position: absolute;
@@ -129,7 +99,7 @@ import '../styles/globle.css';
 		font-size: 0.8em;
 		font-weight: bold;
 		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
+		color: black;
 		border-radius: 4px;
 		padding: 0.3em 0.4em;
 	}
@@ -143,3 +113,4 @@ import '../styles/globle.css';
 		padding: 0;
 	}
 </style>
+
