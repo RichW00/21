@@ -4,6 +4,7 @@ html {
    }
 
 body{
+  color: #044878;
 margin: 0 auto;
 width: 100%;
 max-width: 80ch;
@@ -17,33 +18,38 @@ box-sizing: border-box;
 
 h1{
 margin: 1rem 0;
-font-size: 2.5rem;
+font-size: 4rem;
 }
-.navbar a {
-    font-size: 1rem; 
-  }
-  .navbar ul {
-    padding: 0; 
-  }
-  
-  .navbar li {
-    margin-right: 1rem; 
-  }
-  
-  .navbar a {
-    padding: 0.5rem 1rem; 
-  }
-  .navbar a {
-    line-height: 2; 
-  }
-  .navbar ul {
-    display: flex;
-    justify-content: space-between; 
-  }
-  .navbar {
-    background-color: #333; /* 导航条背景颜色 */
-  }
-  
-  .navbar a {
-    color: #c5dda2; /* 导航链接的文本颜色 */
-  }
+/* 导航样式 */
+.hamburger {
+padding-right:  20px;
+cursor: pointer;
+}
+.hamburger .line{
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: bisque;
+}
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: bisque;
+  display: none;
+  margin: 0;
+
+}
+
+.nav-links a{
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 3vw #04b2f705;
+  animation: flux 2s linear infinite;
+}
